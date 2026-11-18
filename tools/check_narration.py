@@ -4,8 +4,10 @@ import argparse
 import difflib
 import json
 import re
+from pathlib import Path
 
 from faster_whisper import WhisperModel
+from faster_whisper.audio import decode_audio
 from generate_narration import OUT, cues
 
 
@@ -18,10 +20,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--fitted", action="store_true")
     parser.add_argument("--only", type=int, nargs="+")
+    parser.add_argument("--directory", type=Path, default=OUT)
     args = parser.parse_args()
     model = WhisperModel("small.en", device="cpu", compute_type="int8", cpu_threads=6)
     suffix = "fitted" if args.fitted else "natural"
-    report_path = OUT / f"asr-check-{suffix}.json"
+    report_path = args.directory / f"asr-check-{suffix}.json"
     results = (
         json.loads(report_path.read_text())
         if args.only and report_path.exists()
@@ -30,9 +33,18 @@ if __name__ == "__main__":
     for cue in cues():
         if args.only and cue["id"] not in args.only:
             continue
-        path = OUT / ("cues" if args.fitted else "takes") / f"{cue['id']:02}.wav"
+        path = (
+            args.directory
+            / ("cues" if args.fitted else "takes")
+            / f"{cue['id']:02}.wav"
+        )
+        audio = decode_audio(str(path), sampling_rate=16000)
+        # Normalize the diagnostic input so quiet synthesis is not mistaken for silence.
+        peak = float(abs(audio).max())
+        if peak > 0:
+            audio *= 0.8 / peak
         segments, _ = model.transcribe(
-            str(path), language="en", beam_size=5, condition_on_previous_text=False
+            audio, language="en", beam_size=5, condition_on_previous_text=False
         )
         transcript = "".join(s.text for s in segments).strip()
         expected, actual = words(cue["text"]), words(transcript)
