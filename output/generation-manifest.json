@@ -1,0 +1,154 @@
+{
+  "model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "model_revision": "29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+  "cosyvoice_commit": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+  "source_sha256": {
+    "assets/my_clip.wav": "1fd4ef1a0c38afab0ab012b5295373742fe4e06e20c90a24779e6c0ff1cf51ad",
+    "assets/relaxing-a-turkey-script.txt": "4daf7e060326c73ebf6cc6561046db4c74bb3bb3f97378c634f42d72c4590bd1",
+    "assets/relaxing-a-turkey-timed-draft.md": "93780ff1bd843b921458949869e2e42b370fbf20a4aafa7e3353855760c7aa87"
+  },
+  "takes": [
+    {
+      "cue": 1,
+      "seed": 20261119,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 2,
+      "seed": 20261320,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 3,
+      "seed": 20261521,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 4,
+      "seed": 20261222,
+      "mode": "fast_instruction",
+      "pickup": false
+    },
+    {
+      "cue": 5,
+      "seed": 20261123,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 6,
+      "seed": 20261124,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 7,
+      "seed": 20261325,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 8,
+      "seed": 20261126,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 9,
+      "seed": 20261127,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 10,
+      "seed": 20261128,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 11,
+      "seed": 20261129,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 12,
+      "seed": 20261130,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 13,
+      "seed": 20261131,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 14,
+      "seed": 20261132,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 15,
+      "seed": 20261133,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 16,
+      "seed": 20261134,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 17,
+      "seed": 20261135,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 18,
+      "seed": 20261136,
+      "mode": "zero_shot",
+      "pickup": false
+    },
+    {
+      "cue": 19,
+      "seed": 20261637,
+      "mode": "zero_shot",
+      "pickup": true
+    },
+    {
+      "cue": 20,
+      "seed": 20261238,
+      "mode": "fast_instruction",
+      "pickup": false
+    }
+  ],
+  "outputs": {
+    "relaxing-a-turkey-timed.wav": {
+      "sha256": "1770ec6d80421983638980a874fe840ac77270d86e69fcb3cf104bbba4ec43ff",
+      "bytes": 14344460,
+      "duration": 99.614,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_24"
+    },
+    "relaxing-a-turkey-natural.wav": {
+      "sha256": "014516ee83acc24d93f4eb76d78fa8b10b526614b8f51f17bd00e01925c1cc39",
+      "bytes": 16547804,
+      "duration": 114.915,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_24"
+    },
+    "relaxing-a-turkey-preview.mp3": {
+      "sha256": "a239a51835557e54d7fd0bbefedf2606c767944274d8eb01efbc1a98643295ec",
+      "bytes": 2392173
+    }
+  }
+}

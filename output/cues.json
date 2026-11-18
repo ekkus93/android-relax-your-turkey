@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "start": 0.44,
+    "end": 4.76,
+    "text": "Watch. I need this ingredient in the fridge.",
+    "natural_seconds": 3.055,
+    "tempo_multiplier": 0.85,
+    "speech_end": 4.0341
+  },
+  {
+    "id": 2,
+    "start": 4.76,
+    "end": 9.48,
+    "text": "I have this beautiful turkey that I saved for Thanksgiving. And I'm going to",
+    "natural_seconds": 6.825,
+    "tempo_multiplier": 1.4537,
+    "speech_end": 9.455
+  },
+  {
+    "id": 3,
+    "start": 9.48,
+    "end": 14.8,
+    "text": "show you how to debone this turkey in eighteen seconds or less. Don't blink.",
+    "natural_seconds": 5.165,
+    "tempo_multiplier": 0.9754,
+    "speech_end": 14.775
+  },
+  {
+    "id": 4,
+    "start": 14.8,
+    "end": 16.28,
+    "text": "If you blink, I finished the turkey already,",
+    "natural_seconds": 2.0,
+    "tempo_multiplier": 1.3746,
+    "speech_end": 16.255
+  },
+  {
+    "id": 5,
+    "start": 16.28,
+    "end": 20.36,
+    "text": "okay? Because this is going to go well with the stuffing and cranberry sauce,",
+    "natural_seconds": 4.675,
+    "tempo_multiplier": 1.1529,
+    "speech_end": 20.335
+  },
+  {
+    "id": 6,
+    "start": 20.36,
+    "end": 23.96,
+    "text": "okay? Here, I have a beautiful turkey.",
+    "natural_seconds": 2.905,
+    "tempo_multiplier": 0.85,
+    "speech_end": 23.7777
+  },
+  {
+    "id": 7,
+    "start": 23.96,
+    "end": 30.68,
+    "text": "And this turkey is so huge, and it's so tense, you cannot cut through, even with a sharp knife. So, you've got to learn the",
+    "natural_seconds": 9.025,
+    "tempo_multiplier": 1.348,
+    "speech_end": 30.655
+  },
+  {
+    "id": 8,
+    "start": 30.68,
+    "end": 38.12,
+    "text": "Chinese secret, which I learned from an elderly man in Chongqing, Sichuan.",
+    "natural_seconds": 6.585,
+    "tempo_multiplier": 0.8881,
+    "speech_end": 38.095
+  },
+  {
+    "id": 9,
+    "start": 38.12,
+    "end": 46.32,
+    "text": "He said, \"First, relax the turkey.\" Of course he's nervous\u2014it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+    "natural_seconds": 8.235,
+    "tempo_multiplier": 1.0073,
+    "speech_end": 46.295
+  },
+  {
+    "id": 10,
+    "start": 46.32,
+    "end": 52.16,
+    "text": "You use only three fingers. You go up and down, up and down, circular motion.",
+    "natural_seconds": 6.085,
+    "tempo_multiplier": 1.0464,
+    "speech_end": 52.135
+  },
+  {
+    "id": 11,
+    "start": 52.16,
+    "end": 56.76,
+    "text": "Only up and down. Don't waste time going sideways. Save your energy for the dishes.",
+    "natural_seconds": 5.115,
+    "tempo_multiplier": 1.118,
+    "speech_end": 56.735
+  },
+  {
+    "id": 12,
+    "start": 56.76,
+    "end": 61.4,
+    "text": "Circular motion. And then you wing it, okay? You wing it.",
+    "natural_seconds": 4.245,
+    "tempo_multiplier": 0.9198,
+    "speech_end": 61.375
+  },
+  {
+    "id": 13,
+    "start": 61.4,
+    "end": 62.36,
+    "text": "And you know what?",
+    "natural_seconds": 0.835,
+    "tempo_multiplier": 0.893,
+    "speech_end": 62.335
+  },
+  {
+    "id": 14,
+    "start": 62.36,
+    "end": 66.84,
+    "text": "The turkey is totally relaxed. Look at this.",
+    "natural_seconds": 4.265,
+    "tempo_multiplier": 0.9574,
+    "speech_end": 66.815
+  },
+  {
+    "id": 15,
+    "start": 66.84,
+    "end": 69.8,
+    "text": "Nervous. Relaxed. Ready for Thanksgiving.",
+    "natural_seconds": 3.205,
+    "tempo_multiplier": 1.092,
+    "speech_end": 69.775
+  },
+  {
+    "id": 16,
+    "start": 69.8,
+    "end": 72.84,
+    "text": "Now, pay attention. Eighteen seconds. Time it,",
+    "natural_seconds": 4.145,
+    "tempo_multiplier": 1.3748,
+    "speech_end": 72.815
+  },
+  {
+    "id": 17,
+    "start": 72.84,
+    "end": 80.28,
+    "text": "okay? Three, two, one! One cut. Another cut. Turn it around. One cut along the back. Hold it like this. Don't do it like that.",
+    "natural_seconds": 11.035,
+    "tempo_multiplier": 1.4882,
+    "speech_end": 80.255
+  },
+  {
+    "id": 18,
+    "start": 80.28,
+    "end": 87.76,
+    "text": "The whole turkey breast comes out, and the tenderloin comes out like this. The tenderloin on this side comes out like that. Please, come out!",
+    "natural_seconds": 10.675,
+    "tempo_multiplier": 1.4319,
+    "speech_end": 87.735
+  },
+  {
+    "id": 19,
+    "start": 87.76,
+    "end": 97.2,
+    "text": "And turn it around. This side. The turkey breast comes out like this. Another piece of turkey breast comes out like that. And the last little tenderloin comes out like that.",
+    "natural_seconds": 12.585,
+    "tempo_multiplier": 1.3367,
+    "speech_end": 97.175
+  },
+  {
+    "id": 20,
+    "start": 97.2,
+    "end": 99.614,
+    "text": "Nice and done. Happy Thanksgiving!",
+    "natural_seconds": 1.415,
+    "tempo_multiplier": 0.85,
+    "speech_end": 98.8647
+  }
+]

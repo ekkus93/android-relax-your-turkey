@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "expected": "Watch. I need this ingredient in the fridge.",
+    "recognized": "Watch, I need this ingredient in the fridge.",
+    "differences": []
+  },
+  {
+    "id": 2,
+    "expected": "I have this beautiful turkey that I saved for Thanksgiving. And I'm going to",
+    "recognized": "I have this beautiful turkey that I saved for Thanksgiving, and I'm going to...",
+    "differences": []
+  },
+  {
+    "id": 3,
+    "expected": "show you how to debone this turkey in eighteen seconds or less. Don't blink.",
+    "recognized": "Show you how to debone this turkey in 18 seconds or less. Don't blink!",
+    "differences": []
+  },
+  {
+    "id": 4,
+    "expected": "If you blink, I finished the turkey already,",
+    "recognized": "If you blink, I finished the turkey already.",
+    "differences": []
+  },
+  {
+    "id": 5,
+    "expected": "okay? Because this is going to go well with the stuffing and cranberry sauce,",
+    "recognized": "Okay, because this is going to go well with the stuffing and cranberry sauce.",
+    "differences": []
+  },
+  {
+    "id": 6,
+    "expected": "okay? Here, I have a beautiful turkey.",
+    "recognized": "Okay, here I have a beautiful turkey.",
+    "differences": []
+  },
+  {
+    "id": 7,
+    "expected": "And this turkey is so huge, and it's so tense, you cannot cut through, even with a sharp knife. So, you've got to learn the",
+    "recognized": "and this turkey is so huge and it's so tense you cannot cut through even with a sharp knife so you've got to learn the",
+    "differences": []
+  },
+  {
+    "id": 8,
+    "expected": "Chinese secret, which I learned from an elderly man in Chongqing, Sichuan.",
+    "recognized": "Chinese secret, which I learned from an elderly man in Chongqing, Sichuan.",
+    "differences": []
+  },
+  {
+    "id": 9,
+    "expected": "He said, \"First, relax the turkey.\" Of course he's nervous\u2014it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+    "recognized": "He said, first, relax the turkey. Of course he's nervous. It's Thanksgiving. Everybody's coming over for dinner, and he's the main course.",
+    "differences": []
+  },
+  {
+    "id": 10,
+    "expected": "You use only three fingers. You go up and down, up and down, circular motion.",
+    "recognized": "You use only three fingers. You go up and down, up and down, circular motion.",
+    "differences": []
+  },
+  {
+    "id": 11,
+    "expected": "Only up and down. Don't waste time going sideways. Save your energy for the dishes.",
+    "recognized": "Only up and down, don't waste time going sideways, save your energy for the dishes.",
+    "differences": []
+  },
+  {
+    "id": 12,
+    "expected": "Circular motion. And then you wing it, okay? You wing it.",
+    "recognized": "circular motion, and then you wing it, okay? You wing it.",
+    "differences": []
+  },
+  {
+    "id": 13,
+    "expected": "And you know what?",
+    "recognized": "And you know what?",
+    "differences": []
+  },
+  {
+    "id": 14,
+    "expected": "The turkey is totally relaxed. Look at this.",
+    "recognized": "The turkey is totally relaxed. Look at this.",
+    "differences": []
+  },
+  {
+    "id": 15,
+    "expected": "Nervous. Relaxed. Ready for Thanksgiving.",
+    "recognized": "nervous, relaxed, ready for Thanksgiving.",
+    "differences": []
+  },
+  {
+    "id": 16,
+    "expected": "Now, pay attention. Eighteen seconds. Time it,",
+    "recognized": "Now pay attention, 18 seconds, time it.",
+    "differences": []
+  },
+  {
+    "id": 17,
+    "expected": "okay? Three, two, one! One cut. Another cut. Turn it around. One cut along the back. Hold it like this. Don't do it like that.",
+    "recognized": "Okay, three, two, one. One cut, another cut, turn it around, one cut along the back. Hold it like this, don't do it like that.",
+    "differences": []
+  },
+  {
+    "id": 18,
+    "expected": "The whole turkey breast comes out, and the tenderloin comes out like this. The tenderloin on this side comes out like that. Please, come out!",
+    "recognized": "The whole turkey breast comes out and the tenderloin comes out like this. The tenderloin on this side comes out like that. Please come out.",
+    "differences": []
+  },
+  {
+    "id": 19,
+    "expected": "And turn it around. This side. The turkey breast comes out like this. Another piece of turkey breast comes out like that. And the last little tenderloin comes out like that.",
+    "recognized": "turn it around the side the turkey breast comes out like this another piece of turkey breast comes out like that and last little tenderloin comes out like that",
+    "differences": [
+      {
+        "operation": "delete",
+        "expected": "and",
+        "recognized": ""
+      },
+      {
+        "operation": "replace",
+        "expected": "this",
+        "recognized": "the"
+      },
+      {
+        "operation": "delete",
+        "expected": "the",
+        "recognized": ""
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "expected": "Nice and done. Happy Thanksgiving!",
+    "recognized": "Nice and done. Happy Thanksgiving.",
+    "differences": []
+  }
+]
