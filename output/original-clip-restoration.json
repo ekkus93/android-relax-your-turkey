@@ -1,0 +1,18 @@
+{
+  "reference_source": "assets/my_clip.wav only; no source-video audio",
+  "input_sha256": "1fd4ef1a0c38afab0ab012b5295373742fe4e06e20c90a24779e6c0ff1cf51ad",
+  "input_rate": 8000,
+  "input_duration": 12.266375,
+  "cleaned_reference": "output/my_clip-cleaned.wav",
+  "cleaned_reference_sha256": "60f2badc6c60647e77dfb988a31e1294b3edd8cf09cba557ff9f70b364eed745",
+  "repair_filter": "highpass=f=65,adeclick=t=6:b=1.5",
+  "denoise_filter": "arnndn=m=speech-denoiser.rnnn:mix=0.75,lowpass=f=3700",
+  "denoiser_model_url": "https://raw.githubusercontent.com/GregorR/rnnoise-models/3eee541a283fd3b8f81b85b1748e3b9ccbefa04d/somnolent-hogwash-2018-09-01/sh.rnnn",
+  "denoiser_model_sha256": "70bb6685eb0c2a1d18e2918dca3fbfbd39317010b1802eb1b6ea73a92f3fdec0",
+  "denoiser_mix": 0.75,
+  "processing_delay_compensated_seconds": 0.01,
+  "prompt_start_seconds": 6.55,
+  "prompt_duration_seconds": 5.55,
+  "prompt_transcript": "You are a helpful assistant.<|endofprompt|>You use only three finger. You go up and down, up and down, circular motion.",
+  "prompt_sha256": "43bf68fac07253104b84b89acc8479ea6a3970c42a4e9d6f6ee25f04f5477260"
+}
