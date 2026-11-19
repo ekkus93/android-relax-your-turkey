@@ -1,0 +1,40 @@
+{
+  "source": "relaxing-a-turkey-natural-smooth.wav",
+  "source_sha256": "97e87bff2c993af91ca92596035fc6184cfa841f291b9a57b37341aa76919434",
+  "output": "relaxing-a-turkey-natural-balanced.wav",
+  "output_sha256": "204a11d3d6cda5ed59c8f653d854a73970b4290180b85360bc67e5dc3152a88e",
+  "export_rate": 48000,
+  "synthesis_rate": 24000,
+  "duration_seconds": 143.15,
+  "tempo_changed": false,
+  "filter_graph": "[0:a]acrossover=split=4500:order=4th[low][high];[high]asplit=2[before_high][to_compressor];[to_compressor]acompressor=threshold=0.0125:ratio=3:attack=1:release=70:makeup=1:knee=2.828:detection=peak:mix=0.65,asplit=2[after_high][mix_high];[low][mix_high]amix=inputs=2:normalize=0,bass=f=180:t=q:w=0.707:g=1.5,equalizer=f=2600:t=q:w=0.75:g=1.5[balanced]",
+  "additional_gain": 0.9752816557884216,
+  "rms_change_db": -0.06228388696677868,
+  "output_peak_dbfs": -5.451897382736206,
+  "alignment_shift_seconds": [
+    8.333333333333333e-05,
+    8.333333333333333e-05,
+    8.333333333333333e-05
+  ],
+  "relative_band_balance_change_db": {
+    "body": 1.0541625262484824,
+    "presence": 1.0406856122074546,
+    "air": -1.017155403782593
+  },
+  "deessing": {
+    "crossover_hz": 4500,
+    "ten_ms_frames_with_more_than_half_db_reduction": 620,
+    "total_ten_ms_frames": 14315,
+    "max_active_frame_reduction_db": 4.337896823883057,
+    "median_changed_frame_reduction_db": 1.8425061702728271
+  },
+  "comparison": {
+    "order": [
+      "previous smoothed mix",
+      "de-essed and balanced mix"
+    ],
+    "gap_seconds": 0.75,
+    "excerpt_start": 56.05,
+    "excerpt_end": 65.005
+  }
+}
