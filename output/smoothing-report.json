@@ -1,0 +1,32 @@
+{
+  "source": "relaxing-a-turkey-natural-gentle.wav",
+  "source_sha256": "aaf8366d847c7d4692471dece7835d60e627d202af6c77ac1b05f2b0f93a6311",
+  "output": "relaxing-a-turkey-natural-smooth.wav",
+  "output_sha256": "97e87bff2c993af91ca92596035fc6184cfa841f291b9a57b37341aa76919434",
+  "filter": "anlmdn=s=1:p=0.002:r=0.012:m=8",
+  "wet_mix": 0.75,
+  "dry_mix": 0.25,
+  "additional_gain": 1.0,
+  "duration_seconds": 143.15,
+  "sample_rate": 48000,
+  "tempo_changed": false,
+  "rms_change_db": -0.014216503022101014,
+  "band_power_change_db": {
+    "body": -0.006195208121020821,
+    "presence": -0.3623982389541833,
+    "air": -0.5097426145947601
+  },
+  "source_sample_peak_dbfs": -5.451897382736206,
+  "output_sample_peak_dbfs": -5.451897382736206,
+  "comparison": {
+    "file": "cosyvoice-smoothing-before-after.mp3",
+    "order": [
+      "before",
+      "after"
+    ],
+    "excerpt_start": 56.05,
+    "excerpt_end": 65.005,
+    "gap_seconds": 0.75
+  },
+  "video_timing_map": "natural-pace-cue-map.csv"
+}
