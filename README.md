@@ -7,6 +7,7 @@ reference and the 20 windows in `assets/relaxing-a-turkey-timed-draft.md`.
 - [Rebuilt WAV](output/relaxing-a-turkey-cleaned.wav) and [MP3](output/relaxing-a-turkey-cleaned.mp3): revised voice prompt and audio cleanup, with the same 99.614-second timeline. See [cleanup notes](output/CLEANUP.md).
 - [Cleaned original reference](output/my_clip-cleaned.mp3) and [new CosyVoice test](output/cosyvoice-cleaned-clip-test.mp3): generated using a cleaned copy of `my_clip.wav` itself. The test has no timing compression or output denoising. See [reference cleanup notes](output/ORIGINAL-CLIP-CLEANUP.md).
 - Full narration using that cleaned original: [natural pace](output/relaxing-a-turkey-from-cleaned-clip-natural.mp3), [99.614-second timed version](output/relaxing-a-turkey-from-cleaned-clip.mp3).
+- Presence/treble adjustment of the same accepted voice: [balanced test](output/cosyvoice-polished-test.mp3), [brighter test](output/cosyvoice-brighter-test.mp3), [full natural version](output/relaxing-a-turkey-polished-natural.mp3), [full timed version](output/relaxing-a-turkey-polished-timed.mp3). See [mastering notes](output/POLISHING.md).
 - [Original timed WAV](output/relaxing-a-turkey-timed.wav): 99.614 seconds, 48 kHz mono, 24-bit PCM.
 - [MP3 preview](output/relaxing-a-turkey-preview.mp3).
 - [Unfitted takes assembled as a WAV](output/relaxing-a-turkey-natural.wav).
