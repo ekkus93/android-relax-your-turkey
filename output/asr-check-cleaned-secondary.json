@@ -1,0 +1,41 @@
+{
+  "model": "faster-whisper medium.en",
+  "cues": [
+    {
+      "id": 5,
+      "expected": "okay? Because this is going to go well with the stuffing and cranberry sauce,",
+      "recognized": "Because this is going to go well with the stuffing and cranberry sauce.",
+      "differences": [
+        {
+          "operation": "delete",
+          "expected": "okay",
+          "recognized": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "expected": "And this turkey is so huge, and it's so tense, you cannot cut through, even with a sharp knife. So, you've got to learn the",
+      "recognized": "This turkey is so huge and it's so tense. You cannot cut through even with a sharp knife. So you've got to learn the",
+      "differences": [
+        {
+          "operation": "delete",
+          "expected": "and",
+          "recognized": ""
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "expected": "Only up and down. Don't waste time going sideways. Save your energy for the dishes.",
+      "recognized": "Only up and down, don't waste time going sideways. Save your energy for the dishes.",
+      "differences": []
+    },
+    {
+      "id": 15,
+      "expected": "Nervous. Relaxed. Ready for Thanksgiving.",
+      "recognized": "Nervous, relaxed, ready for Thanksgiving.",
+      "differences": []
+    }
+  ]
+}

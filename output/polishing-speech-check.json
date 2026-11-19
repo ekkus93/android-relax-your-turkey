@@ -1,0 +1,14 @@
+[
+  {
+    "file": "cosyvoice-polished-test.wav",
+    "expected": "He said, \"First, relax the turkey.\" Of course he's nervous\u2014it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+    "recognized": "He said, first relax the turkey. Of course he's nervous, it's Thanksgiving. Everybody's coming over for dinner and he's the main course.",
+    "words_match": true
+  },
+  {
+    "file": "cosyvoice-brighter-test.wav",
+    "expected": "He said, \"First, relax the turkey.\" Of course he's nervous\u2014it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+    "recognized": "He said, first relax the turkey. Of course he's nervous, it's Thanksgiving. Everybody's coming over for dinner, and he's the main course.",
+    "words_match": true
+  }
+]

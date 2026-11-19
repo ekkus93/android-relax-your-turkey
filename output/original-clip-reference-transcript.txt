@@ -1,0 +1,2 @@
+output/my_clip-cleaned.wav  You gotta relax your chicken because when the chicken is nervous, you cannot cut through this. So the way to do it is you use only three fingers. You go up and down, up and down, circular motion.
+output/my_clip-cleaned-prompt.wav  You use only three fingers. You go up and down, up and down, circular motion.
