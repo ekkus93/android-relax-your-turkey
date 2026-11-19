@@ -1,0 +1,13 @@
+action,source_seconds,natural_seconds,source_frame_30fps,natural_frame_30fps,basis
+Main-course joke,38.12,56.05,1144,1682,Draft cue boundary; review action pose visually
+Three-finger massage,46.32,65.155,1390,1955,Draft cue boundary; review action pose visually
+Wing movement,56.76,79.965,1703,2399,Draft cue boundary; review action pose visually
+Nervous pose,66.96,93.27,2009,2798,ASR word estimate on source and native take; review frame by frame
+Relaxed pose,67.68,94.01,2030,2820,ASR word estimate on source and native take; review frame by frame
+Pay attention,69.8,96.115,2094,2883,Draft cue boundary; review action pose visually
+Countdown three,73.78,103.15,2213,3094,ASR word estimate on source and native take; review frame by frame
+Countdown two,74.22,104.25,2227,3128,ASR word estimate on source and native take; review frame by frame
+Countdown one,75.1,105.51,2253,3165,ASR word estimate on source and native take; review frame by frame
+First cutting call,75.48,106.23,2264,3187,ASR word estimate on source and native take; review frame by frame
+Last tenderloin line ends,95.94,139.58,2878,4187,"ASR end of final 'that' on source and native take; speech anchor, not measured end of physical action"
+Finished turkey / greeting,97.2,139.825,2916,4195,Draft cue boundary; review action pose visually

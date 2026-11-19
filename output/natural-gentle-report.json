@@ -1,0 +1,18 @@
+{
+  "source": "relaxing-a-turkey-my_clip2-natural.wav",
+  "source_sha256": "166c5fccc8f769ab0c94cf528f560eab57511d1eb7f7f7fe8b787992e43cfb6d",
+  "output": "relaxing-a-turkey-natural-gentle.wav",
+  "output_sha256": "aaf8366d847c7d4692471dece7835d60e627d202af6c77ac1b05f2b0f93a6311",
+  "filters": "adeclick=w=30:o=75:a=2:t=5:b=1,acompressor=threshold=0.25:ratio=1.6:attack=2:release=90:makeup=1:knee=2.8:detection=peak,volume=0.891250938",
+  "edge_fade_seconds": 0.012,
+  "duration_seconds": 143.15,
+  "sample_rate": 48000,
+  "processing_shift_seconds": 0.0,
+  "source_sample_peak_dbfs": -2.0000003278255463,
+  "output_sample_peak_dbfs": -5.451897382736206,
+  "source_full_scale_samples": 0,
+  "output_full_scale_samples": 0,
+  "detected_impulse_samples": 837,
+  "tempo_changed": false,
+  "makeup_gain": false
+}
