@@ -5,6 +5,7 @@ import hashlib
 import json
 import subprocess
 import sys
+from pathlib import Path
 
 import numpy as np
 import soundfile as sf
@@ -22,6 +23,7 @@ REPORT_NAME = "cleanup-report.json"
 FAST_CUES = {4, 17, 20}
 FINISH_FILTERS = "highpass=f=70,adeclick=t=5:b=2,afftdn=nr=4:nf=-55,lowpass=f=7200:p=2"
 EXPORT_NATURAL = False
+SAMPLE_STEM = "cosyvoice-cleaned-clip-test"
 REFERENCE_DETAILS = {
     "reference_source": "Supplied video: same passage as my_clip.wav, original 44.1 kHz AAC",
     "clip_match_correlation": 0.992657840773224,
@@ -56,6 +58,61 @@ def prepare_reference():
     )
 
 
+def prepare_custom_reference(source, start, duration, transcript):
+    """Use a supplied recording without the old narrowband restoration filters."""
+    info = sf.info(source)
+    if start < 0 or duration <= 0 or duration > 30 or start + duration > info.duration:
+        raise ValueError(
+            "Prompt must be inside the recording and no longer than 30 seconds"
+        )
+    record = {
+        "reference_source": str(source.relative_to(ROOT)),
+        "input_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+        "input_rate": info.samplerate,
+        "input_channels": info.channels,
+        "input_duration": info.duration,
+        "prompt_start_seconds": start,
+        "prompt_duration_seconds": duration,
+        "prompt_transcript": transcript,
+        "preprocessing": "mono conversion and resampling only; no EQ or denoising",
+    }
+    manifest = OUT / f"{source.stem}-reference.json"
+    if manifest.exists() and any((WORK / "takes").glob("*.wav")):
+        previous = json.loads(manifest.read_text())
+        for key in [
+            "input_sha256",
+            "prompt_start_seconds",
+            "prompt_duration_seconds",
+            "prompt_transcript",
+        ]:
+            if previous[key] != record[key]:
+                raise ValueError(
+                    "Reference changed: preserve or remove cached takes before generating again"
+                )
+    prompt = OUT / f"{source.stem}-prompt.wav"
+    ffmpeg(
+        "-i",
+        source,
+        "-ss",
+        start,
+        "-t",
+        duration,
+        "-ac",
+        1,
+        "-ar",
+        24000,
+        "-c:a",
+        "pcm_s24le",
+        prompt,
+    )
+    data, _ = sf.read(prompt)
+    assert np.isfinite(data).all() and 0.001 < np.max(np.abs(data)) < 0.99
+    (WORK / "prompt.wav").write_bytes(prompt.read_bytes())
+    record["prompt_sha256"] = hashlib.sha256(prompt.read_bytes()).hexdigest()
+    manifest.write_text(json.dumps(record, indent=2) + "\n")
+    return record
+
+
 def generate(rows, only, seed_offset):
     sys.path[:0] = [
         str(ROOT / ".runtime/CosyVoice"),
@@ -86,6 +143,7 @@ def generate(rows, only, seed_offset):
         seed = 20261118 + row["id"] + seed_offset
         set_all_random_seed(seed)
         text = row["text"].replace("debone", "de-bone")
+        text = text.replace("—", ". ")
         text = text[0].upper() + text[1:]
         fast = row["id"] in FAST_CUES
         if fast:
@@ -264,7 +322,7 @@ def render(rows):
         # Unstretched, unfiltered generated speech for judging the actual clone.
         test, test_rate = sf.read(WORK / "takes/09.wav", dtype="float32")
         test *= 10 ** (-2 / 20) / float(np.max(np.abs(test)))
-        test_path = OUT / "cosyvoice-cleaned-clip-test.wav"
+        test_path = OUT / f"{SAMPLE_STEM}.wav"
         sf.write(test_path, test, test_rate, subtype="PCM_24")
         ffmpeg(
             "-i",
@@ -273,7 +331,7 @@ def render(rows):
             "libmp3lame",
             "-b:a",
             "192k",
-            OUT / "cosyvoice-cleaned-clip-test.mp3",
+            OUT / f"{SAMPLE_STEM}.mp3",
         )
     print(f"RENDERED {master}: {len(timeline) / rate}s", flush=True)
 
@@ -283,7 +341,12 @@ if __name__ == "__main__":
     parser.add_argument("--only", type=int, nargs="+")
     parser.add_argument("--seed-offset", type=int, default=1000)
     parser.add_argument("--render-only", action="store_true")
-    parser.add_argument("--clean-original", action="store_true")
+    reference_options = parser.add_mutually_exclusive_group()
+    reference_options.add_argument("--clean-original", action="store_true")
+    reference_options.add_argument("--reference-wav", type=Path)
+    parser.add_argument("--reference-text-file", type=Path)
+    parser.add_argument("--prompt-start", type=float, default=0)
+    parser.add_argument("--prompt-duration", type=float)
     args = parser.parse_args()
     if args.clean_original:
         from clean_original_clip import PROMPT_TEXT
@@ -295,6 +358,23 @@ if __name__ == "__main__":
         FAST_CUES = set()
         FINISH_FILTERS = "anull"
         EXPORT_NATURAL = True
+    elif args.reference_wav:
+        source = args.reference_wav.resolve()
+        if not args.reference_text_file or args.prompt_duration is None:
+            parser.error(
+                "--reference-wav requires --reference-text-file and --prompt-duration"
+            )
+        REFERENCE_TEXT = (
+            "You are a helpful assistant.<|endofprompt|>"
+            + args.reference_text_file.read_text().strip()
+        )
+        WORK = ROOT / f".runtime/{source.stem}-generation"
+        STEM = f"relaxing-a-turkey-{source.stem}"
+        SAMPLE_STEM = f"cosyvoice-{source.stem}-test"
+        REPORT_NAME = f"{source.stem}-narration-report.json"
+        FAST_CUES = set()
+        FINISH_FILTERS = "anull"
+        EXPORT_NATURAL = True
     for path in [WORK, WORK / "takes", WORK / "cues"]:
         path.mkdir(parents=True, exist_ok=True)
     rows = cues()
@@ -303,12 +383,20 @@ if __name__ == "__main__":
             from clean_original_clip import prepare
 
             REFERENCE_DETAILS = prepare(WORK, OUT, ffmpeg)
+        elif args.reference_wav:
+            REFERENCE_DETAILS = prepare_custom_reference(
+                source, args.prompt_start, args.prompt_duration, REFERENCE_TEXT
+            )
         else:
             prepare_reference()
         generate(rows, args.only, args.seed_offset)
     elif args.clean_original:
         REFERENCE_DETAILS = json.loads(
             (OUT / "original-clip-restoration.json").read_text()
+        )
+    elif args.reference_wav:
+        REFERENCE_DETAILS = json.loads(
+            (OUT / f"{source.stem}-reference.json").read_text()
         )
     if all((WORK / "takes" / f"{r['id']:02}.wav").exists() for r in rows):
         render(rows)

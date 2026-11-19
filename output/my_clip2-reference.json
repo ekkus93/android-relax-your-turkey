@@ -1,0 +1,12 @@
+{
+  "reference_source": "assets/my_clip2.wav",
+  "input_sha256": "d1c071a614417f62948eeac07b6b9ad84a3bd674a6ee29a77ef71d6793fd8010",
+  "input_rate": 48000,
+  "input_channels": 2,
+  "input_duration": 12.97325,
+  "prompt_start_seconds": 4.85,
+  "prompt_duration_seconds": 4.9,
+  "prompt_transcript": "You are a helpful assistant.<|endofprompt|>Somehow my mother never get out of work until probably about six thirty or seven.",
+  "preprocessing": "mono conversion and resampling only; no EQ or denoising",
+  "prompt_sha256": "ab0da855327d5be9c25f6cee9f83c896c6bd30c915f9317b55f697e71500f576"
+}
