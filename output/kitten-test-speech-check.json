@@ -1,0 +1,14 @@
+[
+  {
+    "paragraph": 5,
+    "model": "medium.en",
+    "source_sha256": "dabed371aa279ae0efecaaa646859101b945236b11ff3e637ab1152f86e0206f",
+    "expected": "He said, \"First, relax the turkey.\" Of course he's nervous\u2014it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+    "recognized": "He said, first, relax the turkey. Of course he's nervous. It's Thanksgiving. Everybody's coming over for dinner, and he's the main course.",
+    "differences": [],
+    "export_file": "kitten-tts-voice-test.wav",
+    "export_sha256": "63538b7ce5101ea1f0d690ee8490fb82f9b6b0ab8675546442b5b8bbc73308b0",
+    "export_recognized": "He said, first, relax the turkey. Of course he's nervous. It's Thanksgiving. Everybody's coming over for dinner. And he's the main course.",
+    "export_words_match": true
+  }
+]

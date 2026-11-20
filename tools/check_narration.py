@@ -12,7 +12,8 @@ from generate_narration import OUT, cues
 
 
 def words(text):
-    text = re.sub(r"\b18\b", "eighteen", text)
+    numbers = {"1": "one", "2": "two", "3": "three", "18": "eighteen"}
+    text = re.sub(r"\b(?:18|1|2|3)\b", lambda match: numbers[match.group()], text)
     return re.findall(r"[a-z]+(?:'[a-z]+)?", text.lower().replace("’", "'"))
 
 

@@ -1,0 +1,253 @@
+{
+  "engine": "Kitten TTS 2",
+  "package": "kittenml",
+  "package_version": "0.9.7",
+  "code_revision": "5802f6b956844919ecf210f4e55f4750a6ad7c6f",
+  "model": "KittenML/kitten-tts-2",
+  "model_revision": "c93cb7c271baa51d9ae8204d5277988906f235a2",
+  "weights": "packed (lossless)",
+  "decoder": "default",
+  "preset": "stable",
+  "reference": {
+    "source": "assets/my_clip2.wav",
+    "source_sha256": "d1c071a614417f62948eeac07b6b9ad84a3bd674a6ee29a77ef71d6793fd8010",
+    "prompt_start": 4.85,
+    "prompt_end": 12.97325,
+    "prompt_duration": 8.12325,
+    "prompt_sha256": "eaa1b099b672a708f2184b0c2886fc381aabf298dca34dea3e7835001d867d71",
+    "transcript": "Somehow my mother never get out of work until probably about six thirty or seven. So I used to go to the wet market and pick up some vegetables for my mother.",
+    "preparation": "mono conversion and resampling only"
+  },
+  "script_sha256": "4daf7e060326c73ebf6cc6561046db4c74bb3bb3f97378c634f42d72c4590bd1",
+  "native_rate": 24000,
+  "export_rate": 48000,
+  "duration_seconds": 108.125,
+  "sample_start": 38.67,
+  "sample_end": 47.37,
+  "sample_duration": 8.7,
+  "gain": 0.684275427912331,
+  "peak_dbfs": -5.5000001192092896,
+  "time_stretching": false,
+  "output_noise_reduction": false,
+  "output_eq": false,
+  "comparison": {
+    "file": "cosyvoice-vs-kitten.mp3",
+    "order": [
+      "CosyVoice balanced mix",
+      "Kitten TTS 2"
+    ],
+    "cosy_source": "cosyvoice-my_clip2-balanced-test.wav",
+    "source_lufs": [
+      -25.3559642646806,
+      -26.912288693024074
+    ],
+    "target_lufs": -26.912288693024074,
+    "static_gains": [
+      0.835956691698005,
+      1.0
+    ],
+    "gap_seconds": 0.75,
+    "note": "Only the louder excerpt is attenuated; no comparison limiting or EQ"
+  },
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "text": "Watch. I need this ingredient in the fridge.",
+      "synthesis_text": "Watch. I need this ingredient in the fridge.",
+      "seed": 20261121,
+      "native_rate": 24000,
+      "duration": 3.6,
+      "sample_peak": 0.5534010529518127,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.1999892201274633,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 2,
+      "text": "I have this beautiful turkey that I saved for Thanksgiving. And I'm going to show you how to debone this turkey in eighteen seconds or less. Don't blink. If you blink, I finished the turkey already, okay?",
+      "synthesis_text": "I have this beautiful turkey that I saved for Thanksgiving. And I'm going to show you how to de-bone this turkey in eighteen seconds or less. Don't blink. If you blink, I finished the turkey already, okay?",
+      "seed": 20261122,
+      "native_rate": 24000,
+      "duration": 13.96,
+      "sample_peak": 0.5716027021408081,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 4.5874711610376835,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 3,
+      "text": "Because this is going to go well with the stuffing and cranberry sauce, okay? Here, I have a beautiful turkey.",
+      "synthesis_text": "Because this is going to go well with the stuffing and cranberry sauce, okay? Here, I have a beautiful turkey.",
+      "seed": 20261123,
+      "native_rate": 24000,
+      "duration": 7.16,
+      "sample_peak": 0.5084998607635498,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 2.343634045217186,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 4,
+      "text": "And this turkey is so huge, and it's so tense, you cannot cut through, even with a sharp knife. So, you've got to learn the Chinese secret, which I learned from an elderly man in Chongqing, Sichuan.",
+      "synthesis_text": "And this turkey is so huge, and it's so tense, you cannot cut through, even with a sharp knife. So, you've got to learn the Chinese secret, which I learned from an elderly man in Chongqing, Sichuan.",
+      "seed": 20261124,
+      "native_rate": 24000,
+      "duration": 14.12,
+      "sample_peak": 0.5219945311546326,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 4.72165516577661,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 5,
+      "text": "He said, \"First, relax the turkey.\" Of course he's nervous\u2014it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+      "synthesis_text": "He said, \"First, relax the turkey.\" Of course he's nervous. it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+      "seed": 20261125,
+      "native_rate": 24000,
+      "duration": 9.08,
+      "sample_peak": 0.7053360342979431,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 11.653099797200412,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 6,
+      "text": "You use only three fingers. You go up and down, up and down, circular motion.",
+      "synthesis_text": "You use only three fingers. You go up and down, up and down, circular motion.",
+      "seed": 20261126,
+      "native_rate": 24000,
+      "duration": 6.08,
+      "sample_peak": 0.6112667322158813,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.9935194849967957,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 7,
+      "text": "Only up and down. Don't waste time going sideways. Save your energy for the dishes.",
+      "synthesis_text": "Only up and down. Don't waste time going sideways. Save your energy for the dishes.",
+      "seed": 20261127,
+      "native_rate": 24000,
+      "duration": 5.68,
+      "sample_peak": 0.6603531241416931,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.877224971074611,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 8,
+      "text": "Circular motion. And then you wing it, okay? You wing it. And you know what?",
+      "synthesis_text": "Circular motion. And then you wing it, okay? You wing it. And you know what?",
+      "seed": 20261128,
+      "native_rate": 24000,
+      "duration": 5.08,
+      "sample_peak": 0.5775301456451416,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.6979797729291022,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 9,
+      "text": "The turkey is totally relaxed. Look at this.",
+      "synthesis_text": "The turkey is totally relaxed. Look at this.",
+      "seed": 20261129,
+      "native_rate": 24000,
+      "duration": 3.32,
+      "sample_peak": 0.5326382517814636,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.2239581919275224,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 10,
+      "text": "Nervous. Relaxed. Ready for Thanksgiving.",
+      "synthesis_text": "Nervous. Relaxed. Ready for Thanksgiving.",
+      "seed": 20261130,
+      "native_rate": 24000,
+      "duration": 3.2,
+      "sample_peak": 0.47186708450317383,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.0815030210651457,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 11,
+      "text": "Now, pay attention. Eighteen seconds. Time it, okay? Three, two, one!",
+      "synthesis_text": "Now, pay attention. Eighteen seconds. Time it, okay? Three, two, one!",
+      "seed": 20261131,
+      "native_rate": 24000,
+      "duration": 6.04,
+      "sample_peak": 0.4279792308807373,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.9685718012042344,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 12,
+      "text": "One cut. Another cut. Turn it around. One cut along the back. Hold it like this. Don't do it like that.",
+      "synthesis_text": "One cut. Another cut. Turn it around. One cut along the back. Hold it like this. Don't do it like that.",
+      "seed": 20261132,
+      "native_rate": 24000,
+      "duration": 8.0,
+      "sample_peak": 0.4962202310562134,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 2.5839854730293155,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 13,
+      "text": "The whole turkey breast comes out, and the tenderloin comes out like this. The tenderloin on this side comes out like that. Please, come out!",
+      "synthesis_text": "The whole turkey breast comes out, and the tenderloin comes out like this. The tenderloin on this side comes out like that. Please, come out!",
+      "seed": 20261133,
+      "native_rate": 24000,
+      "duration": 9.24,
+      "sample_peak": 0.510762095451355,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 2.9938557730056345,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 14,
+      "text": "And turn it around. This side. The turkey breast comes out like this. Another piece of turkey breast comes out like that. And the last little tenderloin comes out like that.",
+      "synthesis_text": "And turn it around. This side. The turkey breast comes out like this. Another piece of turkey breast comes out like that. And the last little tenderloin comes out like that.",
+      "seed": 20261134,
+      "native_rate": 24000,
+      "duration": 11.6,
+      "sample_peak": 0.7694888114929199,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 3.7281873412430286,
+      "use_reference_prompt": true
+    },
+    {
+      "paragraph": 15,
+      "text": "Nice and done. Happy Thanksgiving!",
+      "synthesis_text": "Nice and done. Happy Thanksgiving!",
+      "seed": 20261135,
+      "native_rate": 24000,
+      "duration": 3.0,
+      "sample_peak": 0.5611152052879333,
+      "samples_at_vocoder_limit": 0,
+      "elapsed_seconds": 1.1215163711458445,
+      "use_reference_prompt": true
+    }
+  ],
+  "outputs": {
+    "relaxing-a-turkey-kitten-natural.wav": {
+      "sha256": "a51a561a65781f564eeffdc389f17f1f5c76cbae13f2332301e9831f49178942",
+      "bytes": 15570044
+    },
+    "kitten-tts-voice-test.wav": {
+      "sha256": "63538b7ce5101ea1f0d690ee8490fb82f9b6b0ab8675546442b5b8bbc73308b0",
+      "bytes": 1252844
+    }
+  },
+  "environment": {
+    "torch": "2.11.0+cu130",
+    "torchaudio": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "diffusers": "0.39.0",
+    "s3tokenizer": "0.3.0",
+    "numpy": "1.26.4",
+    "soundfile": "0.14.0"
+  }
+}

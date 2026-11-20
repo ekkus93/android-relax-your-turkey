@@ -1,0 +1,128 @@
+[
+  {
+    "paragraph": 1,
+    "model": "small.en",
+    "source_sha256": "1f0d38905af39405d30d3b36ad50f0f7841efc226fa9fcf971ae394a8e4788d5",
+    "expected": "Watch. I need this ingredient in the fridge.",
+    "recognized": "Watch, I need this ingredient in the fridge.",
+    "differences": []
+  },
+  {
+    "paragraph": 2,
+    "model": "small.en",
+    "source_sha256": "4e6af5e17475c0ba53e436dbbcfab32fae13aa7830145dd20a67496ed9a48590",
+    "expected": "I have this beautiful turkey that I saved for Thanksgiving. And I'm going to show you how to debone this turkey in eighteen seconds or less. Don't blink. If you blink, I finished the turkey already, okay?",
+    "recognized": "I have this beautiful turkey that I saved for Thanksgiving, and I'm going to show you how to debone this turkey in 18 seconds or less. Don't blink. If you blink, I finished the turkey already, okay?",
+    "differences": []
+  },
+  {
+    "paragraph": 3,
+    "model": "small.en",
+    "source_sha256": "91aee3ecde43d8edc00dbce8415f708c169082d4b7f4cf17721b85b38d6dcd97",
+    "expected": "Because this is going to go well with the stuffing and cranberry sauce, okay? Here, I have a beautiful turkey.",
+    "recognized": "Because this is going to go well with the stuffing and cranberry sauce, okay? Here, I have a beautiful turkey.",
+    "differences": []
+  },
+  {
+    "paragraph": 4,
+    "model": "small.en",
+    "source_sha256": "a9d24bbab5839c8cb18f09f8c552b8f93da8778ebc3a9a298d053437acc29d2a",
+    "expected": "And this turkey is so huge, and it's so tense, you cannot cut through, even with a sharp knife. So, you've got to learn the Chinese secret, which I learned from an elderly man in Chongqing, Sichuan.",
+    "recognized": "And this turkey is so huge, and it's so tense, you cannot cut through, even with a sharp knife. So, you've got to learn the Chinese secret, which I learned from an elderly man in Chongqing, Sichuan.",
+    "differences": []
+  },
+  {
+    "paragraph": 5,
+    "model": "small.en",
+    "source_sha256": "dabed371aa279ae0efecaaa646859101b945236b11ff3e637ab1152f86e0206f",
+    "expected": "He said, \"First, relax the turkey.\" Of course he's nervous\u2014it's Thanksgiving! Everybody's coming over for dinner, and he's the main course!",
+    "recognized": "First, relax the turkey. Of course he's nervous. It's Thanksgiving. Everybody's coming over for dinner. And he's the main course.",
+    "differences": [
+      {
+        "operation": "delete",
+        "expected": "he said",
+        "recognized": ""
+      }
+    ]
+  },
+  {
+    "paragraph": 6,
+    "model": "small.en",
+    "source_sha256": "3a4ba719f972541e1fe5c49bf4733c60188df3a2ba16a24311ecb72ffa01cac3",
+    "expected": "You use only three fingers. You go up and down, up and down, circular motion.",
+    "recognized": "You use only three fingers. You go up and down, up and down, circular motion.",
+    "differences": []
+  },
+  {
+    "paragraph": 7,
+    "model": "small.en",
+    "source_sha256": "d35e52101f790e79517ccf151f91e7473f49354f3fc820c8b65cdab065c950c7",
+    "expected": "Only up and down. Don't waste time going sideways. Save your energy for the dishes.",
+    "recognized": "only up and down. Don't waste time going sideways. Save your energy for the dishes.",
+    "differences": []
+  },
+  {
+    "paragraph": 8,
+    "model": "small.en",
+    "source_sha256": "3e101e29e392a38c8242397421a573a37f4cb8ccdeb7ef7006bdea6801c54532",
+    "expected": "Circular motion. And then you wing it, okay? You wing it. And you know what?",
+    "recognized": "circular motion, and then you wing it, okay? You wing it. And you know what?",
+    "differences": []
+  },
+  {
+    "paragraph": 9,
+    "model": "small.en",
+    "source_sha256": "53a3e406cd11782417de7b1e5fdef131b81b52232cd05285adf8e2e0d31bd3f3",
+    "expected": "The turkey is totally relaxed. Look at this.",
+    "recognized": "The turkey is totally relaxed. Look at this.",
+    "differences": []
+  },
+  {
+    "paragraph": 10,
+    "model": "small.en",
+    "source_sha256": "8469332d8bb8e8dcbf59eff21fc536aae137c76d9ddf4befc1951c7700bdbf4f",
+    "expected": "Nervous. Relaxed. Ready for Thanksgiving.",
+    "recognized": "Nervous, relaxed, ready for Thanksgiving.",
+    "differences": []
+  },
+  {
+    "paragraph": 11,
+    "model": "small.en",
+    "source_sha256": "b8ecd1b21acb73d6f07217b290ed7df08423a10906d3c94ec8bec680401b1b03",
+    "expected": "Now, pay attention. Eighteen seconds. Time it, okay? Three, two, one!",
+    "recognized": "Now, pay attention. 18 seconds. Time it, okay? 3, 2, 1.",
+    "differences": []
+  },
+  {
+    "paragraph": 12,
+    "model": "small.en",
+    "source_sha256": "aa16179b6405c23042bcaca6ee8df08433bf8f88f1c8da1ea9a5834de2e14fa1",
+    "expected": "One cut. Another cut. Turn it around. One cut along the back. Hold it like this. Don't do it like that.",
+    "recognized": "One cut. Another cut. Turn it around. One cut along the back. Hold it like this. Don't do it like that.",
+    "differences": []
+  },
+  {
+    "paragraph": 13,
+    "model": "small.en",
+    "source_sha256": "54fdcb0caf4446c7dd2438f62cd022f1a182f4d41c5888bddf52418adb26f529",
+    "expected": "The whole turkey breast comes out, and the tenderloin comes out like this. The tenderloin on this side comes out like that. Please, come out!",
+    "recognized": "The whole turkey breast comes out and the tenderloin comes out like this. The tenderloin on this side comes out like that. Please come out.",
+    "differences": []
+  },
+  {
+    "paragraph": 14,
+    "model": "small.en",
+    "source_sha256": "5eda8ee834d15725b60a70d5ba619670fb6f781b7fc9a30e81035e12e95c42fc",
+    "expected": "And turn it around. This side. The turkey breast comes out like this. Another piece of turkey breast comes out like that. And the last little tenderloin comes out like that.",
+    "recognized": "and turn it around this side the turkey breast comes out like this another piece of turkey breast comes out like that and the last little tenderloin comes out like that",
+    "differences": []
+  },
+  {
+    "paragraph": 15,
+    "model": "small.en",
+    "source_sha256": "96764fcc2aa2877d78fab2b00d766c73eef7fd7756b08392bcc74558d9de7742",
+    "expected": "Nice and done. Happy Thanksgiving!",
+    "recognized": "Nice and done. Happy Thanksgiving!",
+    "differences": []
+  }
+]
